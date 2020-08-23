@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <title>Code Quiz</title>
     <!--needs a timer-->
-    <!--then multiple choice cards-->
     <!--at the end enter initials-->
-    <!--display score/highscore and restart-->
     <!--add card body and bootstrap-->
 </head>
+
 <body>
-    <div class="controls">
-        <button id="startButtonEl">Start</button>
-
-    </div>
-
-
-
-    <div class='questionContainer'>
-        <div id="questionEl">Question?</div>
-        <div id="answers" class="btnGrid">
-            <button class="btn">Answer1</button>
-            <button class="btn">Answer2</button>
-            <button class="btn">Answer3</button>
-            <button class="btn">Answer4</button>
+    <div class="card text-center  padding-top: 50px;">
+        <div class="card-body">
+            <h5 class="card-title">Code Quiz</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Test your programming knowledge!</h6>
+            <div id="questionEl" class="card-title">Press the start button to play</div>
+            <button class="btn btn-primary btn-large" id="startButtonEl">Start</button>
+            <div id="answersEl" class="btnGrid"></div>
         </div>
-
     </div>
+
 
 </body>
 <script src="script.js"></script>
+
 </html>
